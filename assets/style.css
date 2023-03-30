@@ -1,0 +1,74 @@
+@font-face {
+    font-family: RalewayRegular;
+    src: url(./fonts/Raleway-Regular.ttf);
+}
+
+:root {
+    --headerhoehe: 76px;
+    --logofarbe: #666;
+    --logohover: #333;
+    --menuefarbe: #333;
+    --menuehover: #337ab7;
+}
+
+/* general styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: RalewayRegular, sans-serif;
+    font-size: 65,5%;
+}
+
+/* HEADER + NAVBAR */
+
+header {
+    height: var(--headerhoehe);
+}
+
+nav {
+    border-top: 1px solid #666666b5;
+    border-bottom: 1px solid #66666665;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    color: var(--logofarbe);
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+.logo:hover {
+    color: var(--logohover);
+}
+
+a {
+    text-decoration: none;
+    color: var(--menuefarbe);
+}
+
+a:hover {
+    color: var(--menuehover);
+}
+
+li {
+    font-size: 0.9rem;
+    list-style: none;
+    padding-right: 3vw;
+}
+
+ul {
+    display: flex;
+}
+
+/* ENDE HEADER + NAVBAR */
+
+
