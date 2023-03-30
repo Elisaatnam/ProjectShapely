@@ -9,6 +9,8 @@
     --logohover: #333;
     --menuefarbe: #333;
     --menuehover: #337ab7;
+    --buttoncolor: #745cf9;
+    --buttonhover: #5234f9;
 }
 
 /* general styles */
@@ -21,6 +23,22 @@
 html {
     font-family: RalewayRegular, sans-serif;
     font-size: 65,5%;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    color: white;
+}
+
+.violet-btn {
+    background-color: var(--buttoncolor);
+    padding: 15px 50px;
+}
+
+.violet-btn:hover {
+    background-color: var(--buttonhover);
 }
 
 /* HEADER + NAVBAR */
@@ -50,17 +68,15 @@ nav {
     color: var(--logohover);
 }
 
-a {
-    text-decoration: none;
+li a {
     color: var(--menuefarbe);
 }
 
-a:hover {
+li a:hover {
     color: var(--menuehover);
 }
 
 li {
-    font-size: 0.9rem;
     list-style: none;
     padding-right: 3vw;
 }
@@ -69,6 +85,48 @@ ul {
     display: flex;
 }
 
+.magnifier {
+    height: 18px;
+}
+
 /* ENDE HEADER + NAVBAR */
 
+/* SECTION 1 "we-change" */
 
+.we-change {
+    height: 100vh;
+    background: url(./img/water.jpg) no-repeat center;
+    background-size: cover;
+    color: white;
+}
+
+.we-change article {
+    text-align: center;
+    padding-top: 40vh;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: lighter;
+    margin-bottom: 3vh;
+}
+
+article p {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.585);
+    margin-bottom: 5vh;
+}
+
+article a {
+    padding: 15px 50px;
+    margin-left: 0.5vw;
+}
+
+article a:nth-of-type(2) {
+    border: 1px solid white;
+}
+
+article a:nth-of-type(2):hover {
+    background-color: white;
+    color: #333;
+}
